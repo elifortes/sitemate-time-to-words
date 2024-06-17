@@ -60,7 +60,6 @@ function convertTimeToWords(time) {
   const nextHour = numberToWords[(hours + 1) % 12];
   const remainingMinutes = 60 - minutes;
 
-
   if (minutes === 15) return `quarter past ${hourText}`;
   if (minutes === 30) return `half past ${hourText}`;
   if (minutes === 45) return `quarter to ${nextHour}`;
